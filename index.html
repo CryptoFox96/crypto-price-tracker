@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Price Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Crypto Price Tracker</h1>
+      <p class="subtitle">
+        Top 10 by market cap &nbsp;&bull;&nbsp;
+        <span id="refresh-status">Updating every 10s</span>
+      </p>
+      <p class="last-updated" id="last-updated"></p>
+    </header>
+
+    <div id="error-banner" class="error-banner hidden"></div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th class="rank">#</th>
+            <th class="coin-col">Coin</th>
+            <th class="right">Price (USD)</th>
+            <th class="right">24h Change</th>
+            <th class="right hide-sm">Market Cap</th>
+            <th class="right hide-sm">Volume (24h)</th>
+          </tr>
+        </thead>
+        <tbody id="coin-table">
+          <tr class="skeleton-row">
+            <td colspan="6" class="loading">Loading prices&hellip;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      Data provided by <a href="https://www.coingecko.com" target="_blank" rel="noopener">CoinGecko</a>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
