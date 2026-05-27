@@ -1,6 +1,6 @@
 # Crypto Price Tracker
 
-A simple, realtime cryptocurrency price tracker that runs in the browser. No frameworks, no build step — just HTML, CSS, and JavaScript.
+A simple, realtime cryptocurrency price tracker that runs in the browser. No frameworks, no build step, just HTML, CSS, and JavaScript.
 
 ![Crypto Price Tracker](preview.png)
 
